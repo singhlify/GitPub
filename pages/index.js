@@ -7,17 +7,17 @@ import { sortByDate } from "../utils";
 
 export default function Home({ posts }) {
 	return (
-		<div>
+		<main data-theme="dark" className="max-w-max m-auto mt-20 mb-20">
 			<Head>
 				<title>Dev Blog</title>
 			</Head>
 
-			<div className="posts">
+			<div className="grid grid-cols-3 gap-10">
 				{posts.map((post, index) => (
 					<Post key={index} post={post} />
 				))}
 			</div>
-		</div>
+		</main>
 	);
 }
 
