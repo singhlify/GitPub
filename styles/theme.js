@@ -3,10 +3,8 @@ import { lightTheme } from "../themes/default";
 import GlobalStyles from "./globals";
 
 const Theme = ({ children }) => {
-	const theme = lightTheme;
-
 	return (
-		<ThemeProvider theme={theme}>
+		<ThemeProvider theme={lightTheme}>
 			<GlobalStyles />
 			{children}
 		</ThemeProvider>
