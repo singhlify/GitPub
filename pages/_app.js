@@ -1,14 +1,14 @@
+import Theme from "../styles/theme";
 import Header from "../components/Header";
-import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<>
+		<Theme>
 			<Header />
 			<main className="container">
 				<Component {...pageProps} />
 			</main>
-		</>
+		</Theme>
 	);
 }
 
