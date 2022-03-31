@@ -25,12 +25,12 @@ export const Card = styled(muiCard)`
 	.card__content {
 		font-family: inherit;
 		/* padding: 1rem; */
-		padding: 1.6rem 1rem;
+		padding: 1.6rem 0;
 
 		h3 {
 			font-style: normal;
 			font-weight: 700;
-			font-size: 2.6rem;
+			font-size: 2.2rem;
 			line-height: 140%;
 			padding: 0 0 1.6rem;
 			/* or 50px */
@@ -41,19 +41,19 @@ export const Card = styled(muiCard)`
 		p {
 			font-style: normal;
 			font-weight: 400;
-			font-size: 2rem;
+			font-size: 1.4rem;
 			line-height: 140%;
 			color: rgba(0, 0, 0, 0.5);
 		}
 	}
 
 	.chips {
-		padding: 0 1rem 2rem;
-		margin: auto;
+		/* padding: 0 1rem 1rem; */
+		padding: 0 0 1rem;
 		display: flex;
+    flex-wrap: wrap;
     row-gap: 1rem;
     column-gap: 1rem;
-    flex-wrap: wrap;
 }
 
 		.chip {
@@ -64,7 +64,8 @@ export const Card = styled(muiCard)`
 	}
 
 	.card__header {
-		padding: 0 1rem;
+		/* padding: 0 1rem; */
+		padding: 0;
 
 		.avatar {
 			font-size: 2rem;
