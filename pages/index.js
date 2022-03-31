@@ -1,12 +1,18 @@
-import fs from "fs";
-import path from "path";
+// import fs from "fs";
+// import path from "path";
+import axios from "axios";
 import matter from "gray-matter";
 import Head from "next/head";
+import { useEffect } from "react";
 import Post from "../components/Post/Post";
-import { sortByDate } from "../utils";
+// import { sortByDate } from "../utils";
 import PostsSection from "../components/PostsSection/PostsSection";
 
 export default function Home({ posts }) {
+	useEffect(() => {
+		console.log("posts >>>>", posts);
+	}, [posts]);
+
 	return (
 		<>
 			<Head>
@@ -14,40 +20,20 @@ export default function Home({ posts }) {
 			</Head>
 
 			<PostsSection>
-				{posts.map((post, index) => (
-					<Post key={index} post={post} />
+				{posts.map((post) => (
+					<Post key={post._id} post={post} />
 				))}
 			</PostsSection>
 		</>
 	);
 }
 
-export async function getStaticProps() {
-	// Get files from the posts dir
-	const files = fs.readdirSync(path.join("posts"));
-
-	// Get slug and frontmatter from posts
-	const posts = files.map((filename) => {
-		// Create slug
-		const slug = filename.replace(".md", "");
-
-		// Get frontmatter
-		const markdownWithMeta = fs.readFileSync(
-			path.join("posts", filename),
-			"utf-8"
-		);
-
-		const { data: frontmatter } = matter(markdownWithMeta);
-
-		return {
-			slug,
-			frontmatter,
-		};
-	});
+export async function getServerSideProps() {
+	const { data: posts } = await axios.get(process.env.BE_URL);
 
 	return {
 		props: {
-			posts: posts.sort(sortByDate),
+			posts: posts,
 		},
 	};
 }
