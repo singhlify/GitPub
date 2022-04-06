@@ -59,7 +59,7 @@ const dark = {
 
 const defaultTheme = {
 	fonts: {
-		main: "'Poppins', sans-serif",
+		main: "Roboto, sans-serif",
 	},
 	breakpoints: {
 		sm: "only screen and (min-width: 576px)",
