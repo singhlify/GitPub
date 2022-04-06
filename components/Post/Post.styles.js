@@ -1,76 +1,74 @@
 import styled from "styled-components";
-import { Card as muiCard } from "@mui/material";
-// import {CardMedia as muiCardMedia} from '@mui/material/CardMedia';
 
-export const Card = styled(muiCard)`
-	font-family: ${(props) => props.theme.fonts.main};
-	background: ${(props) => props.theme.colors.blue};
-	/* margin: 5.8rem 0; */
-	/* box-shadow: 0px 10px 50px -20px rgba(0, 0, 0, 0.2),
-		0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 5px -1px rgba(0, 0, 0, 0.1); */
-	/* border-radius: 20px; */
+export const Article = styled.article`
+	width: fit-content;
+	margin: 3rem auto 10rem;
 
-	/* &:hover {
-		box-shadow: 0px 10px 50px -20px rgba(0, 0, 0, 0.2),
-			0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 5px -1px rgba(0, 0, 0, 0.1);
-	} */
-
-	.card__media {
-		object-fit: cover;
-		/* width: 36rem;
-		height: 22rem; */
-		border-radius: 0.8rem;
+	h1 {
+		font-size: 4.8rem;
+		margin-bottom: 1.6rem;
 	}
 
-	.card__content {
-		font-family: inherit;
-		/* padding: 1rem; */
-		padding: 1.6rem 0;
+	h2 {
+		font-size: 4rem;
+	}
 
-		h3 {
-			font-style: normal;
-			font-weight: 700;
-			font-size: 2.2rem;
-			line-height: 140%;
-			padding: 0 0 1.6rem;
-			/* or 50px */
+	h3 {
+		font-size: 3.2rem;
+	}
 
-			/* letter-spacing: -0.03em; */
-		}
+	h4 {
+		font-size: 2.4rem;
+	}
 
-		p {
-			font-style: normal;
-			font-weight: 400;
-			font-size: 1.4rem;
-			line-height: 140%;
-			color: rgba(0, 0, 0, 0.5);
+	h5 {
+		font-size: 2rem;
+	}
+
+	h6 {
+		font-size: 1.6rem;
+	}
+
+	ul,
+	ol {
+		margin-left: 2.4rem;
+		font-size: 2rem;
+
+		li {
+			list-style: unset;
 		}
 	}
 
-	.chips {
-		/* padding: 0 1rem 1rem; */
-		padding: 0 0 1rem;
-		display: flex;
-    flex-wrap: wrap;
-    row-gap: 1rem;
-    column-gap: 1rem;
-}
+	p,
+	li {
+		font-size: 2rem;
+		line-height: 2;
 
-		.chip {
-			font-size: 1.6rem;
-			/* padding: 1rem; */
-			/* margin-right: 1rem; */
+		code {
+			padding: 0.4rem 0.6rem;
+			background-color: #e5e5e5;
+			border-radius: 0.4rem;
 		}
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	blockquote {
+		border-left: 0.4rem solid #e5e7eb;
+		padding-left: 2rem;
+		font-style: italic;
+	}
+
+	img {
+		max-width: 114rem;
+		width: 100%;
+		margin: auto;
 	}
 
 	.card__header {
-		/* padding: 0 1rem; */
-		padding: 0;
-
-		.avatar {
-			font-size: 2rem;
-			background-color: ${(props) => props.theme.colors.bg.button};
-		}
+		margin: 2rem 0;
 
 		span:nth-child(1) {
 			font-size: 2rem;
@@ -78,6 +76,15 @@ export const Card = styled(muiCard)`
 
 		span:nth-child(2) {
 			font-size: 1.6rem;
+		}
+	}
+
+	.content {
+		max-width: 74.6rem;
+		margin: 3rem auto;
+
+		* {
+			margin-bottom: 2rem;
 		}
 	}
 `;
