@@ -19,8 +19,8 @@ export default function Home({ posts }) {
 	);
 }
 
-export async function getServerSideProps() {
-	const { data: posts } = await axios.get(process.env.BE_URL);
+export async function getStaticProps() {
+	const { data: posts } = await axios.get(`${process.env.BE_URL}`);
 
 	return {
 		props: {
