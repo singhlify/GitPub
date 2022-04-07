@@ -1,6 +1,8 @@
 import { Input, TextField, OutlinedInput, Button } from "@mui/material";
 import Link from "next/link";
 import { Wrapper, Nav } from "./Header.styles";
+import logo from "../../assets/images/Singhlify.webp";
+import Image from "next/image";
 
 const Header = () => {
 	return (
@@ -8,7 +10,7 @@ const Header = () => {
 			<Nav>
 				<Link href="/" passHref>
 					<a>
-						<h2>Dev Blog</h2>
+						<Image src={logo} alt="Logo" width={128} height={51} />
 					</a>
 				</Link>
 
