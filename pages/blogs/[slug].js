@@ -4,11 +4,7 @@ import matter from "gray-matter";
 import Post from "../../components/Post/Post";
 
 export default function PostPage(props) {
-	return (
-		<>
-			<Post props={props} />
-		</>
-	);
+	return <Post props={props} />;
 }
 
 export async function getServerSideProps({ params: { slug } }) {
