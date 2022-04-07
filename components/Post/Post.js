@@ -38,22 +38,23 @@ const Post = ({
 	return (
 		<>
 			<Article>
-				<h1>{title}</h1>
-				<CardHeader
-					className="card__header"
-					avatar={
-						<Avatar
-							className="avatar"
-							// sx={{ bgcolor: deepOrange[500] }}
-							alt="Gurjot Singh"
-							src={authorImg}
-						/>
-					}
-					title="Gurjot Singh"
-					subheader={created_on}
-				/>
-				<img src={cover_img} alt={title} />
-
+				<div className="article__header">
+					<h1>{title}</h1>
+					<CardHeader
+						className="card__header"
+						avatar={
+							<Avatar
+								className="avatar"
+								// sx={{ bgcolor: deepOrange[500] }}
+								alt="Gurjot Singh"
+								src={authorImg}
+							/>
+						}
+						title="Gurjot Singh"
+						subheader={created_on}
+					/>
+					<img src={cover_img} alt={title} />
+				</div>
 				<div className="content">
 					<ReactMarkdown components={CodeBlock}>{content}</ReactMarkdown>
 				</div>
