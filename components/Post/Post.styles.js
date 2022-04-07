@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Article = styled.article`
-	width: fit-content;
+	width: 100%;
 	margin: 3rem auto 10rem;
 
 	h1 {
@@ -67,6 +67,11 @@ export const Article = styled.article`
 		margin: auto;
 	}
 
+	.article__header {
+		width: fit-content;
+		margin: auto;
+	}
+
 	.card__header {
 		margin: 2rem 0;
 
@@ -85,6 +90,7 @@ export const Article = styled.article`
 
 		* {
 			margin-bottom: 2rem;
+			word-break: break-word;
 		}
 	}
 `;
