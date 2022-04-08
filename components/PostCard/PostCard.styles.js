@@ -3,7 +3,12 @@ import { Card as muiCard } from "@mui/material";
 
 export const Card = styled(muiCard)`
 	font-family: ${(props) => props.theme.fonts.main};
-	background: ${(props) => props.theme.colors.blue};
+	padding: 1rem;
+	border-radius: 1.6rem;
+
+	&:hover {
+		box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.47);
+	}
 
 	.card__media {
 		object-fit: cover;
@@ -32,12 +37,11 @@ export const Card = styled(muiCard)`
 	}
 
 	.chips {
-		padding: 0 0 1rem;
+		margin: 0 0 2rem;
 		display: flex;
-    flex-wrap: wrap;
-    row-gap: 1rem;
-    column-gap: 1rem;
-}
+		flex-wrap: wrap;
+		row-gap: 1rem;
+		column-gap: 1rem;
 
 		.chip {
 			font-size: 1.6rem;
@@ -49,7 +53,6 @@ export const Card = styled(muiCard)`
 
 		.avatar {
 			font-size: 2rem;
-			background-color: ${(props) => props.theme.colors.bg.button};
 		}
 
 		span:nth-child(1) {
