@@ -1,4 +1,3 @@
-import { Input, TextField, OutlinedInput, Button } from "@mui/material";
 import Link from "next/link";
 import { Wrapper, Nav } from "./Header.styles";
 import logo from "../../assets/images/Singhlify.webp";
