@@ -14,7 +14,7 @@ const Header = () => {
 					</a>
 				</Link>
 
-				<OutlinedInput className="search" placeholder="Please enter text" />
+				{/* <OutlinedInput className="search" placeholder="Please enter text" /> */}
 
 				{/* <Button className="nav__cta" variant="contained" disableElevation>
 					Buy me a Coffee
