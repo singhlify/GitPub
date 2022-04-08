@@ -70,10 +70,18 @@ export const Article = styled.article`
 	.article__header {
 		width: fit-content;
 		margin: auto;
+
+		.cover_img {
+			border-radius: 1rem;
+		}
 	}
 
-	.card__header {
+	.author {
 		margin: 2rem 0;
+
+		img {
+			border-radius: 50%;
+		}
 
 		span:nth-child(1) {
 			font-size: 2rem;
@@ -94,9 +102,9 @@ export const Article = styled.article`
 		}
 	}
 
-	
 	@media ${(props) => props.theme.breakpoints.md} {
-		p, li {
+		p,
+		li {
 			font-size: 2rem;
 		}
 	}
