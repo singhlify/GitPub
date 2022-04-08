@@ -1,13 +1,5 @@
-import Image from "next/image";
+import { default as NextImage } from "next/image";
 import styled from "styled-components";
-
-export default (props) => {
-	return (
-		<CoverImage>
-			<Image {...props} layout="fill" />
-		</CoverImage>
-	);
-};
 
 const CoverImage = styled.div`
 	max-width: 114rem;
@@ -24,3 +16,11 @@ const CoverImage = styled.div`
 		position: relative !important;
 	}
 `;
+
+export default function Image(props) {
+	return (
+		<CoverImage>
+			<NextImage {...props} layout="fill" />
+		</CoverImage>
+	);
+}
