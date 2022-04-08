@@ -41,7 +41,7 @@ export const Article = styled.article`
 
 	p,
 	li {
-		font-size: 2rem;
+		font-size: 1.6rem;
 		line-height: 2;
 
 		code {
@@ -91,6 +91,13 @@ export const Article = styled.article`
 		* {
 			margin-bottom: 2rem;
 			word-break: break-word;
+		}
+	}
+
+	
+	@media ${(props) => props.theme.breakpoints.md} {
+		p, li {
+			font-size: 2rem;
 		}
 	}
 `;
