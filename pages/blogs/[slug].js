@@ -1,4 +1,3 @@
-import Link from "next/link";
 import axios from "axios";
 import matter from "gray-matter";
 import Post from "../../components/Post/Post";
