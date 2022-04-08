@@ -2,7 +2,7 @@ import { Article } from "./Post.styles";
 import { CardHeader, Avatar } from "@mui/material";
 import ReactMarkdown from "react-markdown";
 import Image from "../Image";
-import CodeBlock from "../CodeBlock";
+import { CodeBlock } from "../CodeBlock";
 
 const Post = ({
 	props: {
