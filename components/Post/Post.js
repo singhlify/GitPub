@@ -1,13 +1,13 @@
-import { Article } from "./Post.styles";
 import { CardHeader, Avatar } from "@mui/material";
 import ReactMarkdown from "react-markdown";
 import Image from "../Image";
 import { CodeBlock } from "../CodeBlock";
+import { Article } from "./Post.styles";
+import MetaTags from "../MetaTags";
 
 const Post = ({
 	props: {
 		frontmatter: { cover_img, title, description, tags, created_on },
-		slug,
 		content,
 	},
 }) => {
@@ -16,6 +16,12 @@ const Post = ({
 
 	return (
 		<>
+			<MetaTags title={title} description={description} img={cover_img}>
+				<meta name="author" content="Gurjot Singh" />
+				<meta name="keywords" content={tags} />
+				<meta property="twitter:creator" content="@singhlify" />
+			</MetaTags>
+
 			<Article>
 				<div className="article__header">
 					<h1>{title}</h1>
