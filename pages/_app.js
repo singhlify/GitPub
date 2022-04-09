@@ -1,14 +1,15 @@
-import Header from "../components/Header";
-import "../styles/globals.css";
+import Theme from "../styles/theme";
+import Header from "../components/Header/Header";
+import MainWrapper from "../components/MainWrapper/MainWrapper";
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<>
+		<Theme>
 			<Header />
-			<main className="container">
+			<MainWrapper>
 				<Component {...pageProps} />
-			</main>
-		</>
+			</MainWrapper>
+		</Theme>
 	);
 }
 

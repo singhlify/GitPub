@@ -1,52 +1,33 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
-import Head from "next/head";
-import Post from "../components/Post";
-import { sortByDate } from "../utils";
+import axios from "axios";
+import MetaTags from "../components/MetaTags";
+import Post from "../components/PostCard/PostCard";
+import PostsSection from "../components/PostCardsSection/PostCardsSection";
+import logo from "../assets/images/Singhlify.svg";
 
 export default function Home({ posts }) {
-	return (
-		<div>
-			<Head>
-				<title>Dev Blog</title>
-			</Head>
+	const title = "Singhlify - Web Tutorials";
+	const description =
+		"Hi, I am Gurjot, a Full Stack Developer and this is the place where I write tutorial articles mostly based on Web Technologies like JavaScript, MERN stack, NextJs, AWS and GitHub.";
 
-			<div className="posts">
-				{posts.map((post, index) => (
-					<Post key={index} post={post} />
+	return (
+		<>
+			<MetaTags title={title} description={description} img={logo.src} />
+
+			<PostsSection>
+				{posts.map((post) => (
+					<Post key={post._id} post={post} />
 				))}
-			</div>
-		</div>
+			</PostsSection>
+		</>
 	);
 }
 
 export async function getStaticProps() {
-	// Get files from the posts dir
-	const files = fs.readdirSync(path.join("posts"));
-
-	// Get slug and frontmatter from posts
-	const posts = files.map((filename) => {
-		// Create slug
-		const slug = filename.replace(".md", "");
-
-		// Get frontmatter
-		const markdownWithMeta = fs.readFileSync(
-			path.join("posts", filename),
-			"utf-8"
-		);
-
-		const { data: frontmatter } = matter(markdownWithMeta);
-
-		return {
-			slug,
-			frontmatter,
-		};
-	});
+	const { data: posts } = await axios.get(process.env.BE_URL);
 
 	return {
 		props: {
-			posts: posts.sort(sortByDate),
+			posts: posts,
 		},
 	};
 }

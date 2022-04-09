@@ -4,15 +4,23 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
+		"export": "next build && next export",
 		"start": "next start",
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@emotion/react": "^11.8.2",
+		"@emotion/styled": "^11.8.1",
+		"@mui/material": "^5.5.3",
+		"axios": "^0.26.1",
 		"gray-matter": "^4.0.3",
 		"marked": "^4.0.12",
 		"next": "12.1.0",
 		"react": "17.0.2",
-		"react-dom": "17.0.2"
+		"react-dom": "17.0.2",
+		"react-markdown": "^8.0.2",
+		"react-syntax-highlighter": "^15.5.0",
+		"styled-components": "^5.3.5"
 	},
 	"devDependencies": {
 		"eslint": "7.32.0",
