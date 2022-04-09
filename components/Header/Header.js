@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Wrapper, Nav } from "./Header.styles";
-import logo from "../../assets/images/Singhlify.webp";
+import logo from "../../assets/images/Singhlify.svg";
 import Image from "next/image";
 
 const Header = () => {
@@ -12,12 +12,6 @@ const Header = () => {
 						<Image src={logo} alt="Logo" width={128} height={51} />
 					</a>
 				</Link>
-
-				{/* <OutlinedInput className="search" placeholder="Please enter text" /> */}
-
-				{/* <Button className="nav__cta" variant="contained" disableElevation>
-					Buy me a Coffee
-				</Button> */}
 			</Nav>
 		</Wrapper>
 	);
