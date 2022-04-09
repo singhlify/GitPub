@@ -7,7 +7,7 @@ export const Card = styled(muiCard)`
 	border-radius: 1.6rem;
 
 	&:hover {
-		box-shadow: 0px 10px 20px -8px rgba(0, 0, 0, 0.47);
+		box-shadow: 0px 6px 20px -8px rgba(0, 0, 0, 0.40);
 	}
 
 	.card__media {
