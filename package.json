@@ -14,7 +14,6 @@
 		"@mui/material": "^5.5.3",
 		"axios": "^0.26.1",
 		"gray-matter": "^4.0.3",
-		"marked": "^4.0.12",
 		"next": "12.1.0",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
