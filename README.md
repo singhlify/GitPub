@@ -1,39 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Singhlify
 
-## Getting Started
+![Singhlify Blog](https://repository-images.githubusercontent.com/471452104/c8647c66-471b-4631-9b8a-c9b77de7e176)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
+A blog publication app built with NextJs and sourced from GitHub. Now no need to use a CMS, writers can maintain their code in a GitHub repository as Markdown files & the app will show all the blogs in a clean & modern UI with the lightning speed of NextJs.
+
+## 🚀 Demo
+
+[https://blog-singhlify.vercel.app/](https://blog-singhlify.vercel.app/)
+
+## Project Screenshot:
+
+![Screenshot of a Blog page](https://cdn.hashnode.com/res/hashnode/image/upload/v1649587912717/GUjZc14ru.png)  
+  
+
+## 🧐 Features
+
+Here're some of the project's best features:
+
+* Statically Generated Pages
+* Clean & Modern UI
+* Using GitHub repo as Database for MarkDown files
+* Dynamically generated Meta Data for each page for better SEO
+* Author Info
+* Tags for each blog
+* Date of Creation
+
+## 🛠️ Installation Steps:
+
+1. Clone the repo
+```
+git clone [url]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the dependencies to the local node_modules folder
+```
+npm i
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. Run the app
+```
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 🍰 Contribution Guidelines:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-# Commit Guidelines
+### Commit
 
 **Template-** :feature_emoji: [FEATURE CATEGORY] commit message
 
@@ -43,3 +55,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 :rainbow: `:rainbow: [STYLE]`  
 :memo: `:memo: [DOCS]`  
 :recycle: `:recycle: [REFACTOR]`
+  
+  
+## 💻 Built with
+
+Technologies used in the project:
+
+* NextJs
+* Material UI
+* Styled Components
+* Axios
+* Gray Matter
+* React Markdown
+* React Syntax Highlighter
+
+## 🛡️ License:
+
+This project is licensed under the MIT License
