@@ -1,4 +1,4 @@
-# Singhlify
+# GitPub - A Publication sourced from GitHub
 
 ![Singhlify Blog](https://repository-images.githubusercontent.com/471452104/c8647c66-471b-4631-9b8a-c9b77de7e176)
 
