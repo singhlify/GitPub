@@ -1,15 +1,18 @@
+import { SessionProvider } from "next-auth/react";
 import Theme from "../styles/theme";
 import Header from "../components/Header/Header";
 import MainWrapper from "../components/MainWrapper/MainWrapper";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }) {
 	return (
-		<Theme>
-			<Header />
-			<MainWrapper>
-				<Component {...pageProps} />
-			</MainWrapper>
-		</Theme>
+		<SessionProvider session={session}>
+			<Theme>
+				<Header />
+				<MainWrapper>
+					<Component {...pageProps} />
+				</MainWrapper>
+			</Theme>
+		</SessionProvider>
 	);
 }
 
