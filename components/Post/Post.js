@@ -1,9 +1,9 @@
 import { CardHeader, Avatar } from "@mui/material";
 import ReactMarkdown from "react-markdown";
-import Image from "../Image";
-import { CodeBlock } from "../CodeBlock";
+import Image from "../MicroComponents/Image";
+import { CodeBlock } from "../MicroComponents/CodeBlock";
 import { Article } from "./Post.styles";
-import MetaTags from "../MetaTags";
+import MetaTags from "../MicroComponents/MetaTags";
 
 const Post = ({
 	props: {
