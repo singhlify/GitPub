@@ -46,7 +46,7 @@ export const Article = styled.article`
 
 		code {
 			padding: 0.4rem 0.6rem;
-			background-color: #e5e5e5;
+			background-color: ${(props) => props.theme.colors.bg.inline_code};
 			border-radius: 0.4rem;
 		}
 	}
@@ -56,7 +56,7 @@ export const Article = styled.article`
 	}
 
 	blockquote {
-		border-left: 0.4rem solid #e5e7eb;
+		border-left: 0.4rem solid ${(props) => props.theme.colors.bg.inline_code};
 		padding-left: 2rem;
 		font-style: italic;
 	}
