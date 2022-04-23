@@ -1,8 +1,7 @@
-import { getProviders} from "next-auth/react";
+import { getProviders } from "next-auth/react";
 import SignInContainer from "../components/SignInContainer/SignInContainer";
 
 export default function SignIn({ providers }) {
-
 	return <SignInContainer providers={providers} />;
 }
 
