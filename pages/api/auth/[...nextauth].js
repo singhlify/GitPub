@@ -16,6 +16,9 @@ const options = {
 			clientSecret: process.env.GITHUB_SECRET,
 		}),
 	],
+  pages: {
+    signIn: "/signin",
+  },
 	adapter: MongoDBAdapter(clientPromise)
 	// secret: process.env.NEXTAUTH_SECRET,
 };
