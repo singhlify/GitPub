@@ -3,6 +3,7 @@ import Layout from "../components/MicroComponents/Layout";
 import MetaTags from "../components/MicroComponents/MetaTags";
 import Post from "../components/PostCard/PostCard";
 import PostsSection from "../components/PostCardsSection/PostCardsSection";
+import logo from "../public/images/Singhlify.svg"
 
 export default function Home({ posts }) {
 	const title = "Singhlify - Web Tutorials";
@@ -14,7 +15,7 @@ export default function Home({ posts }) {
 			<MetaTags
 				title={title}
 				description={description}
-				img="/images/Singhlify.svg"
+				img={logo}
 			/>
 
 			<PostsSection>
