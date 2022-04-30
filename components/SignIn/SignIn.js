@@ -3,13 +3,14 @@ import Button from "@mui/material/Button";
 import Image from "../MicroComponents/Image";
 import { signIn } from "next-auth/react";
 import Link from "next/link";
+import logo from "../../public/images/Singhlify.svg"
 
 const SignIn = ({ providers }) => {
 	return (
 		<Main>
 			<Link href="/" passHref>
 				<a>
-					<Image src="/images/Singhlify.svg" alt="brand logo" />
+					<Image src={logo} alt="brand logo" />
 				</a>
 			</Link>
 
