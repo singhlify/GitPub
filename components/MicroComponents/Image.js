@@ -1,7 +1,7 @@
 import { default as NextImage } from "next/image";
 import styled from "styled-components";
 
-const CoverImage = styled.div`
+const StyledImage = styled.div`
 	max-width: 114rem;
 	width: 100%;
 
@@ -19,8 +19,8 @@ const CoverImage = styled.div`
 
 export default function Image(props) {
 	return (
-		<CoverImage>
-			<NextImage {...props} layout="fill" />
-		</CoverImage>
+		<StyledImage>
+			<NextImage {...props} layout="fill" placeholder="blur" blurDataURL />
+		</StyledImage>
 	);
 }

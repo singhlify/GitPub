@@ -1,8 +1,9 @@
 import axios from "axios";
-import MetaTags from "../components/MetaTags";
+import Layout from "../components/MicroComponents/Layout";
+import MetaTags from "../components/MicroComponents/MetaTags";
 import Post from "../components/PostCard/PostCard";
 import PostsSection from "../components/PostCardsSection/PostCardsSection";
-import logo from "../assets/images/Singhlify.svg";
+import logo from "../public/images/Singhlify.svg"
 
 export default function Home({ posts }) {
 	const title = "Singhlify - Web Tutorials";
@@ -10,15 +11,19 @@ export default function Home({ posts }) {
 		"Hi, I am Gurjot, a Full Stack Developer and this is the place where I write tutorial articles mostly based on Web Technologies like JavaScript, MERN stack, NextJs, AWS and GitHub.";
 
 	return (
-		<>
-			<MetaTags title={title} description={description} img={logo.src} />
+		<Layout>
+			<MetaTags
+				title={title}
+				description={description}
+				img={logo}
+			/>
 
 			<PostsSection>
 				{posts.map((post) => (
 					<Post key={post._id} post={post} />
 				))}
 			</PostsSection>
-		</>
+		</Layout>
 	);
 }
 
