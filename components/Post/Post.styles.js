@@ -160,8 +160,7 @@ export const Article = styled.article`
 
 	@media ${(props) => props.theme.breakpoints.lg} {
 		.content__wrapper {
-			display: grid;
-			grid-template-columns: auto auto;
+			display: flex;
 			column-gap: 4rem;
 			width: fit-content;
 
