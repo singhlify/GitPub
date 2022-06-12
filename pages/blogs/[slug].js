@@ -1,14 +1,9 @@
 import axios from "axios";
 import matter from "gray-matter";
-import Layout from "../../components/MicroComponents/Layout";
 import Post from "../../components/Post/Post";
 
 export default function PostPage(props) {
-	return (
-		<Layout>
-			<Post props={props} />
-		</Layout>
-	);
+	return <Post props={props} />;
 }
 
 export async function getStaticPaths() {
