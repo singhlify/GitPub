@@ -3,7 +3,7 @@
 ![Singhlify Blog](https://repository-images.githubusercontent.com/471452104/c8647c66-471b-4631-9b8a-c9b77de7e176)
 
 
-A blog publication app built with NextJs and sourced from GitHub. Now no need to use a CMS, writers can maintain their content in a GitHub repository as Markdown files & the app will show all the blogs in a clean & modern UI with the lightning speed of NextJs.
+A blog publication app built with NextJs and sourced from GitHub. Now no need to use a CMS, writers can maintain their code in a GitHub repository as Markdown files & the app will show all the blogs in a clean & modern UI with the lightning speed of NextJs.
 
 ## 🚀 Demo
 

@@ -9,7 +9,6 @@ const light = {
 			nav: "#009b9b",
 			switch_track: "#aab4be",
 			switch_thumb: "#0080ff",
-			inline_code: "#e5e5e5"
 		},
 		text: {
 			global: "#21243D",
@@ -21,7 +20,7 @@ const light = {
 			project_secondary: "8695A4",
 			footer: "#21243D",
 			link: "#00A8CC",
-			button: "#000000",
+			button: "#ffffff",
 			chip: "#ffffff",
 		},
 		border: "#E0E0E0",
